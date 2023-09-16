@@ -1,0 +1,155 @@
+/* *************** */
+/* ***SMALL LAPTOP**** */
+/* *************** */
+
+@media (max-width: 925px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .new {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    font-size: 1.6rem;
+    padding: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .new-1 {
+    flex: 1;
+  }
+
+  .span {
+    position: absolute;
+    transform: translatey(-20px);
+  }
+
+  .box-img {
+    grid-column: 1 /-1;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-btn {
+    display: block;
+    z-index: 1;
+  }
+
+  .header-right {
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    /* HIDE NAVIGATION */
+    /* display: none; */
+
+    /* HIDE IT VISUALLY */
+    opacity: 0;
+
+    /* MAKE IT UNACCESABLE */
+    pointer-events: none;
+
+    /* HIDE IT FROM SCREEN READERS */
+    visibility: hidden;
+  }
+
+  .nav-open .header-right {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .close-btn {
+    display: block;
+  }
+
+  .nav-open .menu-btn {
+    display: none;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .header-list li {
+    font-size: 3rem;
+  }
+}
+
+/* ****MOBILE PHONES***** */
+
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .box-img {
+    grid-column: 1 /2;
+  }
+
+  .box-pic {
+    display: none;
+  }
+
+  .phone {
+    display: unset;
+  }
+
+  .new {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    font-size: 1.6rem;
+    padding: 3rem;
+    display: block;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    padding-right: 0;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+  }
+
+  .section-bottom {
+    display: block;
+    margin-top: 5rem;
+  }
+
+  .bottom-img {
+    width: 100%;
+  }
+
+  .bottom-img1 {
+    width: 85%;
+  }
+  .bottom-img2 {
+    width: 93%;
+  }
+}
